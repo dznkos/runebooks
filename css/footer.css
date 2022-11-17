@@ -1,0 +1,61 @@
+/* Colors Default */
+@import url("../css/colors.css");
+
+
+.footer-page {
+  background-color: var(--headerColor);  
+  padding: 10px;
+  
+}
+
+footer .foot-copyt {
+  color: var(--textColorPrimary);
+}
+
+.footer-page > section {
+  /* background-color: transparent; */ 
+  color: var(--textColorPrimary);
+}
+.footer-brand {
+  font-size: 1.6rem;
+}
+
+.footer-desc-brand {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.fa-flag:hover {
+    color: red;
+}
+
+.fa-facebook-f:hover {
+  color: rgb(69, 128, 255);
+  transform: translateY(-10px);
+  transition: 1s;
+}
+.fa-twitter:hover {
+  color: rgb(71, 200, 247);
+  transform: translateY(-10px);
+  transition: 1s;  
+}
+.fa-google:hover {
+  color: rgb(208, 52, 52);
+  transform: translateY(-10px);
+  transition: 1s;
+}
+.fa-instagram:hover {
+  color: rgb(202, 41, 41);
+  transform: translateY(-10px);
+  transition: 1s;
+}
+.fa-linkedin:hover {
+  color: rgb(43, 75, 219);
+  transform: translateY(-10px);
+  transition: 1s;
+}
+.fa-github:hover {
+  color: black;
+  transform: translateY(-10px);
+  transition: 1s;
+}

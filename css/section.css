@@ -1,0 +1,49 @@
+
+.box-bootcamps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+.card-bootcamp { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 3px;
+  border-radius: 20px; 
+}
+
+.card-bootcamp img{ 
+  border-radius: 7px;
+  height: 160px;
+}
+
+.list-bootcamps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-bootcamps img{
+  
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.card-title h5{
+  font-size: 14px;
+}
+
+
+.card-title p{
+  font-size: 11px;
+}

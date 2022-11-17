@@ -1,0 +1,37 @@
+
+@media (max-width:700px) {  
+  .img-main { 
+    opacity: 0.2;
+    position: absolute;
+    right: 50%;
+    width: 300px;
+    z-index: 0;  
+  }  
+}
+
+.list-tecno a img {
+  width: 60px;
+}
+
+.event-brand{
+  background-color: rgb(184, 34, 26); 
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn-inicio {
+  margin: 10px 30px 10px 30px;
+  width: 160px;
+}
+
+.contenido-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.box-inicio {
+  max-width: 1200px;
+}

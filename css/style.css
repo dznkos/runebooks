@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Jost:wght@300&display=swap');
+
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Jost', sans-serif; */
+
+
+/*Ofertas*/
+@import url("../css/carrito.css");
+
+/* Header */
+@import url("../css/header.css");
+
+/* Contenido */
+@import url("../css/content.css");
+
+/* Section Bootcamps */
+@import url("../css/section.css");
+
+/* Cursos Online */
+@import url("../css/cursos.css");
+
+/* Footer */
+@import url("../css/footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(44, 38, 52); 
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;    
+  background-color: rgb(243, 243, 243); 
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;  
+  color: rgb(0, 0, 0);
+  font-family: 'Jost', sans-serif;
+}
+
+

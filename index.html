@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous">    
+  </script>
+  <title>PureBooks</title>
+</head>
+<body>
+
+  <div class="event-brand container-fluid d-flex justify-content-center">
+    <p class="text-light mb-0 p-1">
+      Event Black Friday 25% descuento en todos los cursos
+    </p>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    
+    <div class="container-md ">
+      
+      <a class="navbar-brand" href="#">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="img-brand" src="assets/logo/logo2.png" alt="">
+        RuneBooks
+      </a>
+      
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="" class="dropdown-item" href="#">Bootcamps</a> </li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">FrontEnd</a></li>              
+              <li><a class="dropdown-item" href="#">BackEnd</a></li>              
+              <li><a class="dropdown-item" href="#">DevOps</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Developers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>           
+        </ul>      
+        
+      </div>
+      <div>
+        <button class="btn-cart btn rounded-circle ">      
+          <span class="count-cart position-absolute px-1 mt-1 bg-danger">1</span> 
+          <i onclick="showCart(this)" class="fa-solid fa-cart-shopping"></i>
+        </button>      
+        <!--Theme-->
+        <button class="btn rounded-circle">
+          <!--Dark-->
+          <i class="fa-solid fa-moon"></i>
+          <!--Light-->
+          <!--<i class="ri-sun-fill"></i>-->
+        </button>
+        <button class="btn rounded-circle">
+          <i class="fa-solid fa-user"></i>
+        </button>   
+      </div>
+    </div>
+    
+  </nav>
+
+    <!--Shopping Cart-->
+        
+  <div class="cart-products" id="products-id">
+    <p class="close-btn" onclick="closeBtn()">X</p>
+    <h3> Mi carrito</h3>
+    <div class="card-items">            
+    </div>
+    <h2>Total: S/.<strong class="price-total" id="price-total">0</strong></h2>
+    <script>
+      function linkinfopago(){
+        let precio = Number(document.getElementById("price-total").outerText);
+        window.location.href="https://jorgitoayala.github.io/Sneakers/pages/infopago/infopago.html?precio="+precio
+      }
+    </script>    
+    <button type="submit" onclick="linkinfopago()">Pagar</button>    
+  </div>
+
+  <div class="box-inicio container-md py-5">
+
+    <div class="img-content row">
+      <div class="img-main col">
+        <img class="img-fluid" src="/assets/img/main.png" alt="">
+      </div>
+      <div class="contenido-main col">
+        <div>
+        <h2>Los Bootcamps mas completos solo aqui </h2>
+        <p>Lorem ipsum dolor sit amet, laboriosam deleniti nemo possimus vero? Iusto culpa repudiandae vitae sunt illum ea debitis repellat dolores ducimus porro distinctio consequatur eum perspiciatis eligendi obcaecati, aut doloremque sint consequuntur facere quas similique numquam beatae nobis cum?</p>
+        </div>
+
+        <h4>Domina el lenguaje y framework de eleccion:</h4>        
+
+        <div class="list-tecno d-lg-flex flex-wrap justify-content-center">
+          <a href=""><img src="assets/img/icon-tecnologias/nodejs.png" alt=""> </a>
+          <a href=""><img src="assets/img/icon-tecnologias/java.png" alt=""> </a>
+          <a href=""><img src="assets/img/icon-tecnologias/react.png" alt=""> </a>
+          <a href=""><img src="assets/img/icon-tecnologias/javascript.png" alt=""> </a>
+          <a href=""><img src="assets/img/icon-tecnologias/php.png" alt=""> </a>
+          <a href=""><img src="assets/img/icon-tecnologias/flutter.png" alt=""> </a>
+          <a href=""><img src="assets/img/icon-tecnologias/ruby.png" alt=""> </a>
+        </div>
+        <a href="cursos.html" class="btn-inicio btn btn-danger">Ir Cursos</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="box-bootcamps container">
+
+    <div class="container">
+      <h3>Bootcamps disponibles</h3>
+      <div class="list-bootcamps">
+
+        <div class="card-bootcamp">
+          
+            <img src="assets/img/bootcamps/angular.jpeg" alt="">
+          
+          <div class="card-title">
+            <h5>Bootcamp Angular</h5>
+            <p>Iniciamos en 3 dias <br> Nivel Intermedio</p>
+          </div>
+        </div>
+
+        <div class="card-bootcamp">         
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+            <div class="card-title">
+              <h5>Bootcamp Angular</h5>
+              <p>Iniciamos en 1 semana <br> Nivel Intermedio</p>
+            </div>
+
+        </div>
+        <div class="card-bootcamp">
+          
+            <img src="assets/img/bootcamps/javascript.jpeg" alt="">
+            <div class="card-title">
+              <h5>Bootcamp Angular</h5>
+              <p>Iniciamos en 11 dias <br> Nivel Intermedio</p>
+            </div>
+
+        </div>
+        <div class="card-bootcamp">
+          
+            <img src="assets/img/bootcamps/angular.jpeg" alt="">
+            <div class="card-title">
+              <h5>Bootcamp Angular</h5>
+              <p>Iniciamos en 17 dias <br> Nivel Intermedio</p>
+            </div>
+
+        </div>
+        <div class="card-bootcamp">
+          
+            <img src="assets/img/bootcamps/php.jpeg" alt="">
+            <div class="card-title">
+              <h5>Bootcamp Angular</h5>
+              <li>Registro cierra en 
+                <div> <span id="time">05:00</span> minutes!</div>         
+              </li>
+              <li> Nivel Intermedio</li>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="box-content-cursos container-md">
+
+    <div class="cursos-filter ">
+      <h3>Cursos Online</h3>
+       <!--Search-->
+       <div class="search">        
+         <input class=" form-control" type="text" placeholder="Ingrese un curso" />
+         <i class="btn btn-dark ri-search-line">Buscar</i>
+      </div>
+    </div>
+
+    <div class="cursos-list ">
+
+      <h4>Resultados para 'php'</h4>
+
+      <div class="box-cursos">
+        
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso Java</h5>
+              <li>Fernando Martinez</li>
+              <li>Nivel Intermedio</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">45</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="1" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso C</h5>
+              <li>Maricielo Ramirez</li>
+              <li>Nivel Avanzado</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">69</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="2" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso Cobol</h5>
+              <li>Raul Lopez</li>
+              <li>Nivel Basico</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">29</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="3" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso Html</h5>
+              <li>Diego Chavez</li>
+              <li>Nivel Avanzado</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">34</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="4" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso C++</h5>
+              <li>Jorge Rivas</li>
+              <li>Nivel Avanzado</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">98</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="5" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso React</h5>
+              <li>Omar Nunes</li>
+              <li>Nivel Avanzado</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">59</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="6" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso Angular</h5>
+              <li>Diego Chavez</li>
+              <li>Nivel Avanzado</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">79</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="7" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+
+        <div class="item">  
+          <figure>
+            <img src="assets/img/bootcamps/php.jpeg"  alt="">
+          </figure>         
+          <div class="item-title">
+            <div>
+              <h5>Curso Dart</h5>
+              <li>Diego Chavez</li>
+              <li>Nivel Avanzado</li>
+            </div>
+            <div>
+              <p>
+                S/.<b class="price">49</b>
+              </p>   
+            </div>         
+          </div>
+          <a href="" data-id="8" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+        </div>
+        
+      </div>
+    </div>
+   
+  </div> 
+   <!--Close box-cursos  -->
+
+  <footer class="footer-page text-center text-lg-start text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">
+        
+      <!-- Right -->
+      <div>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    
+    <!-- Brand and Links  -->
+    <section class="d-flex flex-wrap justify-content-center align-items-start m-5">
+      <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2 text-center text-md-start mt-1">
+        <div class="row ">
+          <!-- Section 1 column 1 -->
+          <div class="col-xl-auto mb-4">
+            <h6 class="footer-brand fw-bold mb-4">
+              <a href="cursos.html" id="link-social-icon">
+                <img src="assets/logo/logo2.png" width="70px" alt="">
+              </a>              
+              FreeCursos
+            </h6>
+            <p class="footer-desc-brand">
+              Somos un grupo de desarrolladores autodidactas
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-3 mb-4">
+        <!-- Links -->
+        <!-- <h6 class="text-uppercase fw-bold mb-4">
+          Reclamaciones
+        </h6>
+        <p>
+          <a href="#!" class="text-reset">Contratos</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Option2</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Option3</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Option4</a>
+        </p> -->
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-3 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Rune Cursos
+        </h6>
+        <p>          
+          <a href="index.html" class="text-reset">Categorias</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Contacto</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-3 ms-3 mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+        <p><i class="fas fa-home me-3"></i> 8005 Lima, Perú</p>
+        <p>
+          <i class="fas fa-envelope me-3"></i>
+          runecursos@support.com
+        </p>
+        <p><i class="fas fa-phone me-3"></i> (+51) 988333444</p>
+      </div>
+      <!-- Grid column -->
+
+    </section>
+
+    <div class="foot-copyt text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="#">E - Books</a>
+    </div>
+
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script>
+    function startTimer(duration, display) {
+  
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+          // horas = parseInt(timer * 60 % 24, 10);
+          minutes = parseInt(timer / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+
+          
+
+          // horas = horas ? horas : horas;
+          // horas = horas;
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+
+          display.text( minutes + ":" + seconds);
+
+          if (--timer < 0) {
+              timer = duration;
+          }
+      }, 1000);
+    }
+
+    jQuery(function ($) {
+      var fiveMinutes = 60 * 25,
+          display = $('#time');
+      startTimer(fiveMinutes, display);
+    });
+  </script>
+</body>
+</html>
