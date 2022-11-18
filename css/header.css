@@ -19,19 +19,62 @@
 
 .navbar {
   background-color: var(--headerColor);
-  padding: 5px 10px 5px 10px;
+  padding: 5px 15px 5px 15px;
   margin: 0px; 
 }
 
 .navbar-brand {
-  font-size: 18px;
-  font-weight: bold;  
+  font-size: 21px;
+  font-weight: 600; 
+  display: flex;
+  align-items: center; 
 }
 
-.img-brand {
-  width: 90px;
-  height: 90px;
-  margin: 1px;
-  object-fit: contain;
+figure img {
+  width: 72px;
+  height: 72px;
+  margin: 1px;  
+}
+
+.title-brand {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.btn-floating-cart {
+  height: 47px;
+  width: 47px;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(96, 221, 183);
+  bottom: 40px;
+  right: 40px;
+  position: fixed;
+  animation: efectocarrito;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.btn-floating-cart i{
+  font-size: 20px;
+}
+
+@keyframes efectocarrito {
+
+  0% {
+
+  }
+  50% {
+    box-shadow: 1px 1px 12px 3px rgb(38, 137, 107);;
+  }
+  100% {
+
+  }
   
 }
+

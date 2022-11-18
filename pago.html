@@ -28,13 +28,14 @@
   <nav class="navbar navbar-expand-lg navbar-dark ">
     
     <div class="container-md ">
-      
-      <a class="navbar-brand" href="index.html">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <img class="img-brand" src="assets/logo/logo2.png" alt="">
-        RuneBooks
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">    
+        <figure>
+          <img class="" src="assets/logo/logo2.png" alt="" >
+        </figure>    
+          RuneBooks
       </a>
       
       <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
@@ -42,46 +43,55 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="categorias.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Categorias
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="" class="dropdown-item" href="#">Bootcamps</a> </li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">FrontEnd</a></li>              
-              <li><a class="dropdown-item" href="#">BackEnd</a></li>              
-              <li><a class="dropdown-item" href="#">DevOps</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link " href="categorias.html"> Categorias</a>           
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Developers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="creadores.html">Creadores</a>
           </li>           
         </ul>      
         
       </div>
-      <div>
-        <button class="btn-cart btn rounded-circle ">      
-          <span class="count-cart position-absolute px-1 mt-1 bg-danger">1</span> 
-          <i onclick="showCart(this)" class="fa-solid fa-cart-shopping"></i>
-        </button>      
-        <!--Theme-->
-        <button class="btn rounded-circle">
-          <!--Dark-->
-          <i class="fa-solid fa-moon"></i>
-          <!--Light-->
-          <!--<i class="ri-sun-fill"></i>-->
-        </button>
-        <button class="btn rounded-circle">
-          <i class="fa-solid fa-user"></i>
-        </button>   
+      <div class="d-flex align-items-center">
+        
+        <a class="btn rounded-circle">
+          <i class="fa-solid fa-moon"></i>          
+          <!-- <i class="ri-sun-fill"></i> -->
+        </a>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            id="myprofile" data-toggle="dropdown"
+          >
+            <img
+              src="https://i.pinimg.com/originals/6f/15/81/6f1581aab3414167f6d6a0b6666a4404.jpg"
+              class="rounded-circle"
+              height="40"
+            />
+          </a>
+          <ul
+            class="dropdown-menu"
+            role="menu" aria-labelledby="myprofile"
+          >
+            <li>
+              <a class="dropdown-item" role="menu-item" href="#">Mi perfil</a>
+            </li>            
+            <li>
+              <a class="dropdown-item" role="menu-item" href="#">Salir</a>
+            </li>
+          </ul>
+        </div>
+
+        
+  </div>
       </div>
     </div>
     
-  </nav>
+  </nav> 
 
 
   <div class="cajita container">      
