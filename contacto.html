@@ -51,7 +51,7 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="creadores.html">Creadores</a>
+            <a class="nav-link" href="nosotros.html">Creadores</a>
           </li>           
         </ul>      
         
@@ -174,11 +174,11 @@
 
             <div class="col-md-6 mt-3 mb-4">
               <div class="form-floating">        
-                <select class="form-select" name="categoria" id="categoria" ng-model="medio" required>
+                <select class="form-select" name="medio" id="medio" ng-model="medio" required>
                   <option selected>- seleccione medio -</option>
-                  <option>Email</option>
-                  <option>Telegram</option>
-                  <option>Whatsapp</option>
+                  <option value="email">Email</option>
+                  <option value="telegram">Telegram</option>
+                  <option value="whatsapp">Whatsapp</option>
                 </select>
                 <label for="floatingselect">Medio preferido de contacto</label>
               </div>
@@ -230,107 +230,113 @@
       </div>
 
         <footer class="footer-page text-center text-lg-start text-muted">
-            <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">
-                
-              <!-- Right -->
-              <div>
-                <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-              <!-- Right -->
-            </section>
-            
-            <!-- Brand and Links  -->
-            <section class="d-flex flex-wrap justify-content-center align-items-start m-5">
-              <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2 text-center text-md-start mt-1">
-                <div class="row ">
-                  <!-- Section 1 column 1 -->
-                  <div class="col-xl-auto mb-4">
-                    <h6 class="footer-brand fw-bold mb-4">
-                      <a href="index.html" id="link-social-icon">
-                        <img src="assets/logo/logo2.png" width="70px" alt="">
-                      </a>              
-                      RuneCursos
-                    </h6>
-                    <p class="footer-desc-brand">
-                      Somos un grupo de desarrolladores autodidactas
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-3 mb-4">
-                <!-- Links -->
-                <!-- <h6 class="text-uppercase fw-bold mb-4">
-                  Reclamaciones
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Contratos</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Option2</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Option3</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Option4</a>
-                </p> -->
-              </div>
-              <!-- Grid column -->
-          
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-3 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Rune Cursos
-                </h6>
-                <p>          
-                  <a href="categorias.html" class="text-reset">Categorias</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Contacto</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-          
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-3 ms-3 mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-                <p><i class="fas fa-home me-3"></i> 8005 Lima, Perú</p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  runecursos@support.com
-                </p>
-                <p><i class="fas fa-phone me-3"></i> (+51) 988333444</p>
-              </div>
-              <!-- Grid column -->
-          
-            </section>
-          
-            <div class="foot-copyt text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-              © 2022 Copyright:
-              <a class="text-reset fw-bold" href="#">E - Books</a>
-            </div>
-          
-          </footer>
+    <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">
+        
+      <!-- Right -->
+      <div>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" id="link-social-icon" href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    
+    <!-- Brand and Links  -->
+    <section class="d-flex flex-wrap justify-content-center align-items-start m-5">
+      <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2 text-center text-md-start mt-1">
+        <div class="row ">
+          <!-- Section 1 column 1 -->
+          <div class="col-xl-auto mb-4">
+            <h6 class="footer-brand fw-bold mb-4">
+              <a href="cursos.html" id="link-social-icon">
+                <img src="assets/logo/logo2.png" width="70px" alt="">
+              </a>              
+              FreeCursos
+            </h6>
+            <p class="footer-desc-brand">
+              Somos un grupo de desarrolladores autodidactas
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-3 mb-4">
+        <!-- Links -->
+        <!-- <h6 class="text-uppercase fw-bold mb-4">
+          Reclamaciones
+        </h6>
+        <p>
+          <a href="#!" class="text-reset">Contratos</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Option2</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Option3</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Option4</a>
+        </p> -->
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-3 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Rune Books
+        </h6>
+        <p>
+          <a href="index.html" class="text-reset">Inicio</a>
+        </p>
+        <p>          
+          <a href="categorias.html" class="text-reset">Categorias</a>
+        </p>
+        <p>
+          <a href="#!" class="text-reset">Contacto</a>
+        </p>
+        <p>
+          <a href="nosotros.html" class="text-reset">Creadores</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-3 ms-3 mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+        <p><i class="fas fa-home me-3"></i> 8005 Lima, Perú</p>
+        <p>
+          <i class="fas fa-envelope me-3"></i>
+          runecursos@support.com
+        </p>
+        <p><i class="fas fa-phone me-3"></i> (+51) 988333444</p>
+      </div>
+      <!-- Grid column -->
+
+    </section>
+
+    <div class="foot-copyt text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="#">E - Books</a>
+    </div>
+
+  </footer>
 
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
