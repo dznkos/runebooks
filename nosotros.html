@@ -30,62 +30,72 @@
       </div>
     
       <nav class="navbar navbar-expand-lg navbar-dark ">
+    
+    <div class="container-md ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">    
+        <figure>
+          <img class="" src="assets/logo/logo2.png" alt="" >
+        </figure>    
+          RuneBooks
+      </a>
+      
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="categorias.html"> Categorias</a>           
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Creadores</a>
+          </li>           
+        </ul>      
         
-        <div class="container-md ">
-          
-          <a class="navbar-brand" href="index.html">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <img class="img-brand" src="assets/logo/logo2.png" alt="">
-            RuneBooks
+      </div>
+      <div class="d-flex align-items-center">
+        
+        <a class="btn rounded-circle">
+          <i class="fa-solid fa-moon"></i>          
+          <!-- <i class="ri-sun-fill"></i> -->
+        </a>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            id="myprofile" data-toggle="dropdown"
+          >
+            <img
+              src="https://i.pinimg.com/originals/6f/15/81/6f1581aab3414167f6d6a0b6666a4404.jpg"
+              class="rounded-circle"
+              height="40"
+            />
           </a>
-          
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="categorias.html" >
-                  Categorias
-                </a>
-                <!-- <ul class="dropdown-menu">
-                  <li><a href="" class="dropdown-item" href="#">Bootcamps</a> </li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">FrontEnd</a></li>              
-                  <li><a class="dropdown-item" href="#">BackEnd</a></li>              
-                  <li><a class="dropdown-item" href="#">DevOps</a></li>
-                </ul> -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Developers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>           
-            </ul>      
-            
-          </div>
-          <div>
-            <button class="btn-cart btn rounded-circle ">      
-              <span class="count-cart position-absolute px-1 mt-1 bg-danger">1</span> 
-              <i onclick="showCart(this)" class="fa-solid fa-cart-shopping"></i>
-            </button>      
-            <!--Theme-->
-            <button class="btn rounded-circle">
-              <!--Dark-->
-              <i class="fa-solid fa-moon"></i>
-              <!--Light-->
-              <!--<i class="ri-sun-fill"></i>-->
-            </button>
-            <button class="btn rounded-circle">
-              <i class="fa-solid fa-user"></i>
-            </button>   
-          </div>
+          <ul
+            class="dropdown-menu"
+            role="menu" aria-labelledby="myprofile"
+          >
+            <li>
+              <a class="dropdown-item" role="menu-item" href="#">Mi perfil</a>
+            </li>            
+            <li>
+              <a class="dropdown-item" role="menu-item" href="#">Salir</a>
+            </li>
+          </ul>
         </div>
+
         
-      </nav>
+  </div>
+      </div>
+    </div>
+    
+  </nav> 
     
         <!--Shopping Cart-->
             
@@ -206,7 +216,7 @@
                 <div class="card-text">
                     <h2>Francois Palomino </h2>
                     <b>Rocket Nro 1</b>
-                    <p>Desarrollo <br> Footer <br> Terminos y Cond. <br> FAQ <br>  </p>
+                    <p>Desarrollo <br> Contacto <br> Footer <br> InfoPago </p>
                 </div>
             </div>
             
@@ -214,7 +224,7 @@
                 <div class="card-text">
                     <h2>Luis Villavicencio</h2>
                     <b>Rocket Nro 2</b>
-                    <p>Desarrollo <br>  Login <br> Ofertas </p>
+                    <p>Desarrollo <br> Carrito <br> Principal <br> Navbar </p>
                 </div>
                 <div class="card-img">
                     <img src="assets/img/teamRocket/rocket2.jpg" alt="">
@@ -228,14 +238,14 @@
                 <div class="card-text">
                     <h2>Perez Muñoz Jordy Anderson</h2>
                     <b>Rocket Nro 3</b>
-                    <p>Desarrollo <br> Productos <br> Carrito </p>
+                    <p>Desarrollo <br> Categorias <br> Creadores <br> Contenido </p>
                 </div>
             </div>
             <div class="card reverse">                
                 <div class="card-text">
                     <h2>Billy</h2>
                     <b>GRocket Nro 4</b>
-                    <p>Desarrollo <br> Header Nav <br> Pagina Principal <br> </p>
+                    <p>Desarrollo <br> Navbar <br> Nosotros <br> Footer </p>
                 </div>
                 <div class="card-img">
                   <img src="assets/img/teamRocket/rocket4.jpg" alt="">
@@ -246,7 +256,6 @@
         
     </div>
 </section>
-
 
 <footer class="footer-page text-center text-lg-start text-muted">
     <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">
@@ -285,7 +294,7 @@
               <a href="cursos.html" id="link-social-icon">
                 <img src="assets/logo/logo2.png" width="70px" alt="">
               </a>              
-              FreeCursos
+              RuneBooks
             </h6>
             <p class="footer-desc-brand">
               Somos un grupo de desarrolladores autodidactas
@@ -318,13 +327,19 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-3 mb-4">
         <!-- Links -->
         <h6 class="text-uppercase fw-bold mb-4">
-          Rune Cursos
+          Rune Books
         </h6>
+        <p>
+          <a href="index.html" class="text-reset">Inicio</a>
+        </p>
         <p>          
-          <a href="index.html" class="text-reset">Categorias</a>
+          <a href="categorias.html" class="text-reset">Categorias</a>
         </p>
         <p>
           <a href="#!" class="text-reset">Contacto</a>
+        </p>
+        <p>
+          <a href="nosotros.html" class="text-reset">Creadores</a>
         </p>
       </div>
       <!-- Grid column -->
