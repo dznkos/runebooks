@@ -20,7 +20,7 @@
 .card-bootcamp img{ 
   border-radius: 7px;
   height: 160px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .list-bootcamps {
@@ -43,12 +43,16 @@
 }
 
 .card-title h5{
-  font-size: 14px;
+  font-size: 18px;
 }
-
 
 .card-title p{
   font-size: 11px;
+}
+
+.info-bootcamp li{
+  font-size: 12px;
+  list-style-type: none;
 }
 
 .card-bootcamp:hover {
