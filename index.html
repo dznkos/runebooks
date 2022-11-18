@@ -199,7 +199,7 @@
       <h3>Cursos Online</h3>
        <!--Search-->
        <div class="search">        
-         <input class=" form-control" type="text" placeholder="Ingrese un curso" />
+         <input id="search_cursos" class="form-control" type="text" placeholder="Ingrese un curso" />
          <i class="btn btn-dark ri-search-line">Buscar</i>
       </div>
     </div>
@@ -209,158 +209,6 @@
       <h4>Resultados para 'php'</h4>
 
       <div class="box-cursos">
-        
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso Java</h5>
-              <li>Fernando Martinez</li>
-              <li>Nivel Intermedio</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">45</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="1" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
-
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso C</h5>
-              <li>Maricielo Ramirez</li>
-              <li>Nivel Avanzado</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">69</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="2" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
-
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso Cobol</h5>
-              <li>Raul Lopez</li>
-              <li>Nivel Basico</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">29</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="3" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
-
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso Html</h5>
-              <li>Diego Chavez</li>
-              <li>Nivel Avanzado</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">34</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="4" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
-
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso C++</h5>
-              <li>Jorge Rivas</li>
-              <li>Nivel Avanzado</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">98</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="5" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
-
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso React</h5>
-              <li>Omar Nunes</li>
-              <li>Nivel Avanzado</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">59</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="6" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
-
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso Angular</h5>
-              <li>Diego Chavez</li>
-              <li>Nivel Avanzado</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">79</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="7" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
-
-        <div class="item">  
-          <figure>
-            <img src="assets/img/bootcamps/php.jpeg"  alt="">
-          </figure>         
-          <div class="item-title">
-            <div>
-              <h5>Curso Dart</h5>
-              <li>Diego Chavez</li>
-              <li>Nivel Avanzado</li>
-            </div>
-            <div>
-              <p>
-                S/.<b class="price">49</b>
-              </p>   
-            </div>         
-          </div>
-          <a href="" data-id="8" class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
-        </div>
         
       </div>
     </div>
@@ -482,8 +330,6 @@
           minutes = parseInt(timer / 60, 10);
           seconds = parseInt(timer % 60, 10);
 
-          
-
           // horas = horas ? horas : horas;
           // horas = horas;
           minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -506,5 +352,105 @@
   </script>
 
   <script src="js/cart.js"></script>
+  <script>
+    var cursos = [
+        {
+          "id": 1,
+          "nombre": "Curso Javascript",
+          "precio": 109,
+          "instructor": 'Jordy Alva',
+          "nivel": 'Avanzado',
+          "certificacion": false,
+          "imagen": "angular.jpeg"
+        },
+        {
+          "id": 2,
+          "nombre": "Curso Go",
+          "precio": 129,
+          "instructor": 'Ernesto Membrillo',
+          "nivel": 'Avanzado',
+          "certificacion": true,
+          "imagen": "php.jpeg"
+        },
+        {
+          "id": 3,
+          "nombre": "Curso Java",
+          "precio": 99,
+          "instructor": 'Miguel Suarez ',
+          "nivel": 'Avanzado',
+          "certificacion": true,
+          "imagen": "php.jpeg"
+        },
+        {
+          "id": 4,
+          "nombre": "Curso Angular",
+          "precio": 149,
+          "instructor": 'Diana Lopez ',
+          "nivel": 'Avanzado',
+          "certificacion": true,
+          "imagen": "php.jpeg"
+        },
+        {
+          "id": 5,
+          "nombre": "Curso React",
+          "precio": 125,
+          "instructor": 'Pedro Rivera',
+          "nivel": 'Avanzado',
+          "certificacion": true,
+          "imagen": "php.jpeg"
+        },
+        {
+          "id": 6,
+          "nombre": "Curso Nodejs",
+          "precio": 140,
+          "instructor": 'Jenny Zamora',
+          "nivel": 'Avanzado',
+          "certificacion": true,
+          "imagen": "php.jpeg"
+        },
+        {
+          "id": 7,
+          "nombre": "Curso Ruby",
+          "precio": 216,
+          "instructor": 'Wilson Juarez',
+          "nivel": 'Avanzado',
+          "certificacion": true,
+          "imagen": "php.jpeg"
+        }
+    ]
+    
+    localStorage.setItem("cursos", JSON.stringify(cursos))
+
+    var localCursos = localStorage.getItem("cursos")
+    
+    $(document).ready( function (){
+
+      var cursos = JSON.parse(localCursos)
+
+      var items = "";
+      for(var i = 0; i < cursos.length; i++){         
+        items += `<div class="item"> 
+          <figure><img src="assets/img/bootcamps/${cursos[i].imagen}">
+          </figure><div class="item-title"><div><h5>${cursos[i].nombre}</h5>
+          <li>${cursos[i].instructor}</li> 
+          <li>${cursos[i].nivel}</li> 
+          </div><div><p>S/.<b class="price">${cursos[i].precio}
+          </b></p></div></div><a href="" data-id="${cursos[i].id}"
+          class="btn-add-cart btn btn-primary fa-add ">Añadir a carrito</a>
+          </div>`
+        $(".box-cursos").html(items);
+      }
+    })
+
+    $(document).ready(function(){
+      $("#search_cursos").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".cursos-list .item ").filter(function() { 
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+
+  </script>
 </body>
 </html>

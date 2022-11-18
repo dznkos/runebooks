@@ -50,7 +50,6 @@ function readTheContent(product) {
         price: product.querySelector('div div b.price').textContent,
         id: product.querySelector('div a').getAttribute('data-id'),
         amount: 1
-
     }
 
     totalCard = parseFloat(totalCard) + parseFloat(infoProduct.price);
