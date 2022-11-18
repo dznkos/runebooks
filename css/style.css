@@ -28,6 +28,9 @@ font-family: 'Jost', sans-serif; */
 
 /*Ofertas*/
 @import url("../css/alert.css");
+
+/*Formularios*/
+@import url("../css/formulario.css");
  
 * {
   margin: 0;
