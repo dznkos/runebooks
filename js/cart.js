@@ -89,8 +89,8 @@ function loadHtml() {
                 <h5 class="item-price">S/.${price}</h5>
                 <h6>Cantidad: ${amount}</h6>
             </div>
-            <span class="delete-product" data-id="${id}">X</span>
-
+            <span class="delete-product fa fa-remove text-danger" data-id="${id}">
+            </span>
         `;
 
         containerBuyCart.appendChild(row);
