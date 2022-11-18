@@ -29,7 +29,7 @@
     
     <div class="container-md ">
       
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,19 +40,19 @@
       <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link " href="categorias.html" >
               Categorias
             </a>
-            <ul class="dropdown-menu">
+            <!-- <ul class="dropdown-menu">
               <li><a href="" class="dropdown-item" href="#">Bootcamps</a> </li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">FrontEnd</a></li>              
               <li><a class="dropdown-item" href="#">BackEnd</a></li>              
               <li><a class="dropdown-item" href="#">DevOps</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li class="nav-item">
             <a class="nav-link">Developers</a>
@@ -94,7 +94,7 @@
     <script>
       function linkinfopago(){
         let precio = Number(document.getElementById("price-total").outerText);
-        window.location.href="https://jorgitoayala.github.io/Sneakers/pages/infopago/infopago.html?precio="+precio
+        window.location.href="pago.html?precio="+precio
       }
     </script>    
     <button type="submit" onclick="linkinfopago()">Pagar</button>    
@@ -176,10 +176,13 @@
             <img src="assets/img/bootcamps/php.jpeg" alt="">
             <div class="card-title">
               <h5>Bootcamp Angular</h5>
-              <li>Registro cierra en 
-                <div> <span id="time">05:00</span> minutes!</div>         
-              </li>
-              <li> Nivel Intermedio</li>
+              <div>
+
+                <li>Registro cierra en 
+                  <div> <span id="time">05:00</span> minutes!</div>         
+                </li>
+                <li> Nivel Intermedio</li>
+              </div>
             </div>
 
         </div>
@@ -501,5 +504,7 @@
       startTimer(fiveMinutes, display);
     });
   </script>
+
+  <script src="js/cart.js"></script>
 </body>
 </html>

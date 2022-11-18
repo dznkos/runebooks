@@ -13,11 +13,14 @@
   align-items: stretch;
   margin: 3px;
   border-radius: 20px; 
+  width: 270px;
+  padding: 10px;
 }
 
 .card-bootcamp img{ 
   border-radius: 7px;
   height: 160px;
+  object-fit: cover;
 }
 
 .list-bootcamps {
@@ -46,4 +49,14 @@
 
 .card-title p{
   font-size: 11px;
+}
+
+.card-bootcamp:hover {
+  box-shadow: 2px 2px 20px 0 #000;
+}
+
+.list-categoria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

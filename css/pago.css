@@ -1,0 +1,98 @@
+.detalles-formulario{
+  padding: 45px 30px;
+  border:1px solid #d3d3d3; 
+  border-radius: 15px; 
+  margin: 0 20px; 
+  max-height: 500px;
+}
+.detalles-titulo{
+  font-size: 28px; 
+  font-weight: bold; 
+  margin-bottom: 25px;
+}
+.detalles-compra{
+  margin-bottom: 20px;
+}
+.detalles-compra div{
+  display: flex; 
+  justify-content:space-between; 
+  margin-bottom: 10px;
+}
+.input-cupon{
+  width: 100%; 
+  position: relative; 
+  margin-bottom: 25px;
+}
+.input-cupon input{
+  margin: 0px;
+  padding: 0px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  outline: none;
+  border: 1px solid #000;
+  height: 30px;
+  border-radius: 15px;
+}
+.input-cupon a{
+  position: absolute;
+  top: 0;
+  border-radius: 0 15px 15px 0;
+  padding: 0 10px;
+  right: 0px;
+  /*z-index: 2;*/
+  border: none;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #000;
+  transform: translateX(2px);
+  align-items: center;
+  display: flex;
+}
+
+.detalle-total{
+  margin-bottom: 20px;
+  margin-top:20px
+}
+.detalle-total div{
+  display: flex; 
+  justify-content:space-between; 
+  margin-bottom: 15px;
+}
+.detalle-total .cupon p{
+  color:#de3131; 
+  font-weight: bold;
+}
+.detalle-total .total p{
+  font-size: 22px; 
+  font-weight:700
+}
+.formulario-buttons{
+  display: flex; 
+  justify-content:space-between; 
+  margin-left: 50px; 
+  width: 55%;
+}
+.formulario-buttons .boton-regresar{
+  display: flex; 
+  align-items: center;
+}
+.formulario-buttons .boton-pago a{
+  padding: 20px 40px; 
+  background-color:#000; 
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.formulario-buttons .boton-pago a i{
+  padding-right: 10px; 
+
+}
+
+.cajita {
+  padding: 20px;
+  max-width: 500px;
+  background-color: #f1f1f1;
+}
